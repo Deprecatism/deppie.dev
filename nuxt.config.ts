@@ -1,13 +1,39 @@
 import tailwindcss from "@tailwindcss/vite";
 
 export default defineNuxtConfig({
-  compatibilityDate: '2024-11-01',
-  devtools: { enabled: true },
-  css: [
-    "~/assets/style.css"
-  ],
+  app: {
+    head: {
+      title: "deppie.dev",
+      htmlAttrs: {
+        lang: "en",
+
+      },
+    },
+  },
+
+  compatibilityDate: "2024-11-01",
+
+  devtools: {
+    enabled: true,
+
+    timeline: {
+      enabled: true,
+    },
+  },
+
+  css: ["~/assets/style.css"],
+
   vite: {
-    plugins: [tailwindcss()]
+    plugins: [tailwindcss()],
+  },
+
+  modules: ["@nuxt/icon",],
+  icon: {
+    mode: 'css',
+    cssLayer: 'base',
+    provider: 'iconify',
+    serverBundle: false,
+    componentName: 'NuxtIcon'
   }
 
-})
+});
