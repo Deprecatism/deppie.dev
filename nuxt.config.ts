@@ -33,7 +33,6 @@ export default defineNuxtConfig({
     cssLayer: 'base',
     provider: 'iconify',
     serverBundle: false,
-    componentName: 'NuxtIcon'
   }
 
 });

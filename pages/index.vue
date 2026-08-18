@@ -7,7 +7,7 @@
         <div class="flex flex-row items-center justify-center" v-for="(i, social) in userdata.socials" :key="social">
           <a class="flex items-center justify-center rounded-full hover:outline-2 outline-offset-4 outline-[#f38ba8]/50"
             :href="i">
-            <NuxtIcon :name="'simple-icons:' + social" size="50px" />
+            <Icon :name="'simple-icons:' + social" size="50px" />
           </a>
         </div>
       </div>
