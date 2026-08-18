@@ -20,5 +20,8 @@
     "vue": "^3.5.41",
     "vue-icon": "2.3.0",
     "vue-router": "^4.6.4"
+  },
+  "allowScripts": {
+    "esbuild@0.28.2": true
   }
 }
